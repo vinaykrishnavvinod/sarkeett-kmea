@@ -1,4 +1,4 @@
-# MongoChat
+# SARKEETTChat
 
 Simple chat app that uses MongoDB and Socket.io
 
