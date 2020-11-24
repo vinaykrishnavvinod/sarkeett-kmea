@@ -1,0 +1,39 @@
+import React from 'react';
+import { Chat, Channel, ChannelHeader, Window } from 'stream-chat-react';
+import { MessageList, MessageInput, MessageLivestream } from 'stream-chat-react';
+import { MessageInputSmall, Thread } from 'stream-chat-react';
+import { StreamChat } from 'stream-chat';
+
+import 'stream-chat-react/dist/css/index.css';
+
+const chatClient = new StreamChat('gx5a64bj4ptz');
+const userToken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoidGlnaHQtdmlvbGV0LTMifQ.j_XBymMURIwQDiaZ_p1zm0B2OXQy4RcpJLqOfZLeSGo';
+
+chatClient.setUser(
+  {
+    id: 'tight-violet-3',
+    name: 'Tight violet',
+    image: 'https://getstream.io/random_png/?id=tight-violet-3&name=Tight+violet'
+  },
+  userToken,
+);
+
+const channel = chatClient.channel('livestream', 'spacex', {
+  image: 'https://goo.gl/Zefkbx',
+  name: 'SpaceX launch discussion',
+});
+
+const App = () => (
+  <Chat client={chatClient} theme={'livestream dark'}>
+    <Channel channel={channel} Message={MessageLivestream}>
+      <Window hideOnThread>
+        <ChannelHeader live />
+        <MessageList />
+        <MessageInput Input={MessageInputSmall} focus />
+      </Window>
+      <Thread fullWidth />
+    </Channel>
+  </Chat>
+);
+
+export default App;
