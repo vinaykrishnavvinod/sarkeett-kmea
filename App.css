@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  height: 100vh;
+  background-color:#363C35;
+  display: flex;;
+  align-items: top;
+  justify-content: center;
+}
+.container {
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+}
+.container-name{
+  align-items: top;
+  justify-content: left;
+
+}
+.heading {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color:#39FF14;
+  font-weight: 500;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+.img-holder {
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  border: 3px black solid;
+  border-radius: 300px;
+  margin-top: 1rem;
+}
+.img {
+  width: 150px;
+  height: 150px;
+border-radius: 300px;
+  object-fit: cover;
+}
+#input[type="file"] {
+  display: none;
+}
+.label {
+  width: 100%;
+  margin-top: 1rem;
+  display: flex; 
+  justify-content: center;
+}
+.image-upload {
+  margin: auto;
+  width: 150px;
+  height: 20px;
+  color: #39FF14;
+  border-radius: 10px;
+  background-color: black;
+  text-align: center;
+  cursor: pointer;
+}
+.profile-name{
+  width:300px;
+  height:30px;
+  color: #39FF14;
+  background-color: black;
+  border-radius: 10px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+}
+.profile-about{
+  width:300px;
+  height:30px;
+  color: #39FF14;
+  background-color: black;
+  border-radius: 10px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+}
+.profile-hobby{
+  width:300px;
+  height:30px;
+  color: #39FF14;
+  background-color: black;
+  border-radius: 10px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+}
+.profile-contact{
+  width:300px;
+  height:30px;
+  color: #39FF14;
+  background-color: black;
+  border-radius: 10px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+}
+.profile-email{
+  width:300px;
+  height:30px;
+  color: #39FF14;
+  background-color: black;
+  border-radius: 10px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+}
+.profile-website{
+  width:300px;
+  height:30px;
+  color: #39FF14;
+  background-color: black;
+  border-radius: 10px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+}
